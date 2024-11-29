@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Selector</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #1e3c72, #2a5298);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      color: #fff;
+    }
+
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #website-container {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    article {
+      position: relative;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    article:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    article h2 {
+      margin-top: 0;
+    }
+
+    article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    article p {
+      line-height: 1.8;
+    }
+
+    .article-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #007bff, #00d2ff);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .article-button:hover {
+      background: linear-gradient(45deg, #0056b3, #009ddf);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    article {
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    /* Footer Styling */
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Choose What You Want to Learn 选择你想学习的内容</h1>
+
+  <article>
+    <h2>Microbit Learning Platform</h2>
+    <h2>Microbit 学习平台</h2>
+    <p>Microbit学习平台提供丰富的编程与电子项目资源，帮助学生通过动手实践轻松学习编程、创意设计与技术，激发创新思维。</p>
+    <p>The Microbit learning platform offers interactive resources for students to easily learn programming and electronics through hands-on projects, fostering creativity and problem-solving skills.</p>
+    <a href="https://oscartanwenlong-hi.github.io/micro-bit/" class="article-button" target="_blank">Visit Microbit Learning Platform</a>
+  </article>
+
+  <!-- Footer Section -->
+  <footer>
+    &copy; 2024 OSCAR TAN WEN LONG. All rights reserved.
+  </footer>
+</body>
+</html>
